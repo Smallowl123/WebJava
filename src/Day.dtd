@@ -1,0 +1,6 @@
+<!ELEMENT Day (day*)>
+<!ELEMENT day (date, maxTemperature, minTemperature, w_Event)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT maxTemperature (#PCDATA)>
+<!ELEMENT minTemperature (#PCDATA)>
+<!ELEMENT w_Event (#PCDATA)>
