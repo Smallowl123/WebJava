@@ -37,11 +37,10 @@ public class DOM {
             Node d = day.item(i);
             if(d.getNodeType() == Node.ELEMENT_NODE){
                 Element element = (Element) d;
-                NamedNodeMap attributes = element.getAttributes();
                 days.add((new Day(element.getElementsByTagName("date").item(0).getTextContent(),
                                   Double.parseDouble(element.getElementsByTagName("maxTemperature").item(0).getTextContent()),
                                   Double.parseDouble(element.getElementsByTagName("minTemperature").item(0).getTextContent()),
-                                  element.getElementsByTagName("date").item(0).getTextContent())));
+                                  element.getElementsByTagName("w_Event").item(0).getTextContent())));
             }
         }
     }

@@ -4,18 +4,18 @@
         <data>2020-10-24</data>
         <max_Temperature>15.0</max_Temperature>
         <min_Temperature>5.0</min_Temperature>
-        <w_Event>2020-10-24</w_Event>
+        <w_Event>Scattered showers</w_Event>
     </day>
     <day>
         <data>2020-10-25</data>
         <max_Temperature>10.0</max_Temperature>
         <min_Temperature>3.0</min_Temperature>
-        <w_Event>2020-10-25</w_Event>
+        <w_Event>Rain</w_Event>
     </day>
     <day>
         <data>2020-10-26</data>
         <max_Temperature>7.0</max_Temperature>
         <min_Temperature>-1.0</min_Temperature>
-        <w_Event>2020-10-26</w_Event>
+        <w_Event>Partly cloudy</w_Event>
     </day>
 </Day>

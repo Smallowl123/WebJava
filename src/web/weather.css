@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgb(236,197,192);
+    text-align: center;
+    font-family: URW Chancery L, cursive;
+    font-size: x-large;
+}
+.body{
+    table-layout: auto;
+}
+.day_block{
+    background-color: rgb(113,14,45);
+    color: rgb(236,227,218);
+}
+.table{
+    text-align: center;
+    width: 100%;
+}
+th{
+    border-bottom: 2px solid rgb(236,227,218);
+}
+
+button{
+    transition-duration: 0.5s;
+    width: 100%;
+    background-color: rgb(236,227,218);
+    border: 2px solid rgb(113,14,45);
+}
+button:hover{
+    background-color: rgb(236,197,192);
+}
+input{
+    width: 63px;
+    background-color: rgb(236,227,218);
+    text-align: center;
+}
+.input_date{
+    width: 74px;
+}

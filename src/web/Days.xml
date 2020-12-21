@@ -5,19 +5,19 @@
         <date>2020-10-24</date>
         <maxTemperature>14</maxTemperature>
         <minTemperature>4</minTemperature>
-        <w_Event>SCATTERED_SHOWERS</w_Event>
+        <w_Event>Scattered showers</w_Event>
     </day>
     <day>
         <date>2020-10-25</date>
         <maxTemperature>9</maxTemperature>
         <minTemperature>2</minTemperature>
-        <w_Event>RAIN</w_Event>
+        <w_Event>Rain</w_Event>
     </day>
 
     <day>
         <date>2020-10-26</date>
         <maxTemperature>6</maxTemperature>
         <minTemperature>-2</minTemperature>
-        <w_Event>PARTLY_CLOUDLY</w_Event>
+        <w_Event>Partly cloudy</w_Event>
     </day>
 </Day>

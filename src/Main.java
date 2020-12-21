@@ -1,12 +1,8 @@
 import DOM.DOM;
-import model.Day;
-import model.WeatherEvents;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.security.DomainCombiner;
-import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            Weather
+        </div>
+    </div>
+</header>
+<div class ="container">
+    <div class="body">
+        <div class="day_block">
+            <table class ="table">
+            </table>
+            <script src="scripts/parseXMLtoTable.js"></script>
+                <details>
+                    <summary>ADD</summary>
+                    <form name="add" method="post">
+                        <input id="input_date" name="add_date" class="input_date" value="2020-12-31"><input id="input_max" name="max" value="0"><input id="input_min" name="min" value="0"><br>
+                        <input TYPE="RADIO"  NAME="Event" VALUE ="Scattered showers" CHECKED>   <img src="icons/scattered.svg">
+                        <input TYPE="RADIO"  NAME="Event" VALUE ="Rain" >                       <img src="icons/rain.svg">
+                        <input TYPE="RADIO"  NAME="Event" VALUE ="Partly cloudy" >              <img src="icons/partly_cloudy.svg">
+                        <input TYPE="RADIO"  NAME="Event" VALUE ="Undefined" >                  <img src="icons/undefined.svg">
+                    </form>
+                    <button id="addButton">Add</button>
+                    <script src="scripts/add.js"></script>
+                </details>
+                <details>
+                    <summary>DEL</summary>
+                    <form id="del" method="post">
+                        <input name="del_date" id="del_input_date" class="input_date" value="2020-12-31">
+                    </form>
+                    <button id="delButton">Del</button>
+                    <script src="scripts/del.js"></script>
+                </details>
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>
