@@ -97,4 +97,8 @@ public class DOM {
             day.setMinTemperatureC(day.getMinTemperatureC() + 1);
         }
     }
+
+    public static ArrayList<Day> getDays(){
+        return days;
+    }
 }

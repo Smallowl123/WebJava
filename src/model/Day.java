@@ -1,7 +1,9 @@
 package model;
 
 
-public class Day {
+import java.io.Serializable;
+
+public class Day implements Serializable {
     String date;
     double maxTemperatureC;
     double minTemperatureC;
