@@ -1,8 +1,9 @@
 function rowDelete (date){
     let table = document.querySelector("table")
-    for(let i = 0; i < table.rows.length; i++){
+    for(let i = 1; i < table.rows.length; i++){
         if (table.rows[i].cells[0].innerHTML == date){
             table.rows[i].parentNode.removeChild(table.rows[i])
+            i--;
         }
     }
 }

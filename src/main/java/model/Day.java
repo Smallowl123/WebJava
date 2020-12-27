@@ -15,6 +15,12 @@ public class Day implements Serializable {
         this.minTemperatureC = minTemperatureC;
         this.w_Event = w_Event;
     }
+    public Day(){
+        this.date = "0000-00-00";
+        this.maxTemperatureC = 0;
+        this.minTemperatureC = 0;
+        this.w_Event = "NULL";
+    }
 
     public String getDate() {
         return date;

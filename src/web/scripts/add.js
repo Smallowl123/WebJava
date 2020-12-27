@@ -15,7 +15,7 @@ function addRow(date, max, min, event){
 let addBtn = document.getElementById("addButton")
 addBtn.onclick = function (){
     let date = document.getElementById("input_date").value
-    let table = document.querySelector("table")
+        let table = document.querySelector("table")
     for(let i = 0; i < table.rows.length; i++){
         if (table.rows[i].cells[0].innerHTML == date){
             return alert("This date is taken")
