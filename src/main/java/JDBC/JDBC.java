@@ -74,8 +74,6 @@ public class JDBC {
         catch (PSQLException ex){
             System.err.println("Invalid input, try again. Data format must be YYYY-MM-DD");
         }
-
-
     }
 
     public static void addDayRow(Statement statement) throws SQLException {

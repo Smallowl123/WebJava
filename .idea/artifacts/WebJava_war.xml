@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WebJava:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WebJava</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WebJava-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WebJava:war exploded" />
+    </root>
+  </artifact>
+</component>
