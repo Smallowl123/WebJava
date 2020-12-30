@@ -7,9 +7,9 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class JDBC {
-    private final static String URL = "jdbc:postgresql://localhost/JavaLabDB";
-    private final static String username = "postgres";
-    private final static String password = "VeryStrongPass(net)";
+    public final static String URL = "jdbc:postgresql://localhost/JavaLabDB";
+    public final static String username = "postgres";
+    public final static String password = "VeryStrongPass(net)";
 
     private static Connection connect() throws SQLException {
         return DriverManager.getConnection(URL, username, password);
@@ -25,6 +25,11 @@ public class JDBC {
         while (resultSet.next()) {
             System.out.println(resultSet.getString("event"));
         }
+    }
+
+    public static Statement getStatement() throws SQLException {
+        Connection connection = connect();
+        return connection.createStatement();
     }
 
     private static void outDaysTable(Statement statement) throws SQLException {
@@ -124,7 +129,7 @@ public class JDBC {
         return new Day();
     }
 
-    private static Day[] getDays(Statement statement) throws SQLException {
+    public static Day[] getDays(Statement statement) throws SQLException {
         String sqlQuery = "SELECT * FROM DAY ORDER BY date";
         ResultSet resultSet = statement.executeQuery(sqlQuery);
         int resultLength = 0;
@@ -151,8 +156,7 @@ public class JDBC {
 
 
     public static void main(String[] args) throws SQLException {
-        Connection connection = connect();
-        Statement statement = connection.createStatement();
+        Statement statement = getStatement();
         try{
             Scanner in = new Scanner(System.in);
             while(true){
